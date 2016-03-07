@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
+body { font-family: Roboto, Arial, sans-serif;color: #808080;font-size: 1.5em;line-height: 24px;font-weight: 300; }
+
+.navbar-nav{margin:0;}
+.navbar-nav>li {float: left;}
+.navbar-default .navbar-nav>.active>a{background-color: #26aae2;color:#fff;}
+.navbar-default .navbar-nav>li.active:first-child>a{border-top-left-radius: 0.2em;border-bottom-left-radius: 0.2em;}
+.navbar-default .navbar-nav>li>a {font-size: 1.2em;}
+.navbar-nav>li>a {padding-top: 14px;padding-bottom: 14px;}
+
+.form h2 {font-size: 1.5em;}
+.form-control {font-size: 1.2em;}
+.form .inner-addon .fa {font-size: 1.8em;padding: 0.3em;color: #26aae2;}
+.form-control-feedback {font-size: 1em; padding: 0.1em 1.4em 0em;}
+.form .form-group{margin-bottom: 10px}
+.modal-body img {padding: 1em 0;width: 15em;margin-left: 2em;}
+.bs-sidebar{padding: 2em;background-color: #f8f8f8;border: 1px solid transparent;border-color: #26aae2;border-radius: .5em;}
+.bpop {font-size: 1em}
+
+.bs-header .header-info {float: right;display: none;}
+.bs-footer h4{display: none;}
+#promo{margin-bottom: 2em}
+#smallBootForm{border-bottom: 1px solid #ccc;padding-bottom: 1em}
+#bigBootForm{padding-top: 1em}
+
+#modalBootForm  h2 {font-size: 1.8em;}
+#modalBootForm .form-control {font-size: 1.8em;}
+#modalBootForm .btn-success {font-size: 2em}
+#modalBootForm .inner-addon .fa {font-size: 2.8em;}
+#modalBootForm .form-control-feedback {font-size: 2em;padding: 0.5em 1.4em 0em;}
+#modalBootForm .checkbox{text-align: center}
+
+@media (max-width: 1200px){
+	.bs-sidebar{font-size: 0.9em;padding: 1em 1.8em;}
+	.bs-sidebar .checkbox{margin-top: 5px;margin-bottom: 5px;}
+	.bs-sidebar .form .form-group {margin-bottom: 5px;}
+}
+@media (max-width: 992px){
+	.banner{margin-bottom: 1em}
+}
+@media only screen and (max-width: 600px){
+	.navbar-nav{font-size: 0.7em;}
+	#modalBootForm h2 {font-size: 1.6em;}
+	#modalBootForm .inner-addon .fa {font-size: 2em;}
+	#modalBootForm .form-control {font-size: 1.4em;}
+	#modalBootForm .btn-success {font-size: 1.4em;}
+	.modal-body .form {padding: 1em 2em;}
+}

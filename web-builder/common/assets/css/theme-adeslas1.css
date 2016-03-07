@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
+body { font-family: Roboto, Arial, sans-serif;color: #808080;font-size: 1.5em;line-height: 24px;font-weight: 300; }
+
+/* custom landing styles */
+.bs-header .header-info span{width: 8em;}
+.bs-header .header-info{display: none;}
+.bs-footer h4{display: none}
+
+#promo {background-repeat: repeat-x;background-color: #fff;background-image: url(../img/fndPromoE.jpg);background-position: center top;background-size: cover;}
+#promo .promo-descrip {position: relative;padding: 0px 10.4%;display: inline-block;}
+#promo .promo-descrip>div:first-child {width: 70%;float:left;}
+    #promo .promo-descrip img{width: 100%;margin: 0% 0 -8.6%;}
+
+#bodySeguroDental #promo{background-image: none;}
+#Logo img {width: 20em;}
+.bpop {font-size: 1em}
+
+
+/* navbar */
+.navbar {min-height: auto;font-size: 0.7em;margin-bottom: 0;}
+	.navbar .container{}
+	.navbar a img { position:absolute;left: 0em; left: .6em;top: .8em;width: 1.6em; height:auto; vertical-align:middle; }
+	.navbar-nav {float: left;margin: 0;}
+		.navbar-nav>li {float: left;}
+
+		.navbar-default {border:none;background-color: #eee}
+		.navbar-default .navbar-nav>.active>a{background-color: #fff;}
+		.navbar-default .navbar-nav>li>a {padding-left: 3em;text-align: center;text-transform: uppercase;font-weight: 100;}
+		.navbar-default .navbar-nav>li.c2c>a{padding-left: 1em;padding-top: .6em;padding-bottom: .6em;}
+		.navbar-default .navbar-nav>li.c2c>a>i{font-size: 1.8em;padding-right: .4em}
+		.navbar-default .navbar-nav>.active>a:hover {background-color: #fff;}
+
+		.nav>li>a {font-size: 1.6em}
+		.navbar a .ON, .active a .OFF { display:none; }
+		.navbar .active a .ON { display:block; }
+		.navbar .c2c{background-color: #26aae2}
+		.navbar-default .navbar-nav>li.c2c>a{color: #fff}
+		.navbar .c2c{cursor:pointer;}
+		.navbar .c2c span{display: inline-block;font-size: 1.7em;line-height: 1.1em;}
+		.navbar .c2c span em{vertical-align: baseline;width: 5.5em;font-size: .4em;font-weight: 500;line-height: 1em;font-style: normal;display: inline-block;}
+
+
+/* modal */
+.modal-dialog{top:10em;}
+.modal-dialog button.close{position: absolute;right: .6em;top: .3em;z-index: 1;}
+.modal-body{background-color: #fff}
+.modal-body .form {    width: 25em;padding-left: 1em;}
+.modal-body .form .btn-success{  padding: 0.3em;font-size: 1.6em;}
+    .modal-body .form label{font-size: 0.7em;line-height: 1.6em;}
+    .modal-body .form h3 {margin-top: 0;color: #26aae2;font-size: 2.4em;font-weight: 200;text-align: left}
+	.modal-body .form p {font-size: 1.3em;color: #333;}
+	.modal-body .phone{color: #5cb85c;font-size: 1.2em;}
+.modal-body img {position: absolute;right: 0;bottom: 0;width: auto;height: 25em;padding: 0;
+				 	-moz-border-radius: 0 0 5px;-webkit-border-radius: 0 0 5px;-khtml-border-radius: 0 0 5px;border-radius: 0 0 5px;}
+
+/* layer cover */
+.form .inner-addon .fa {color: #26aae2;}
+#smallBootForm {width: 29%;float: left; display:inline-block; padding:1.5em 2em; margin-top:2em; background:#333; background:rgba(0,0,0,.7); vertical-align:top; color:#fff; position:relative; box-shadow: 0 0 15px rgba(0,0,0,0.85);}
+	#smallBootForm h3{margin-top: 0;font-weight: 200;text-transform: uppercase;text-align: left}
+	#smallBootForm h3 i{font-size: 2em;float:left;padding-right: .3em}
+	#smallBootForm img{float: left;margin-right: .5em;height: 2em;}
+	#smallBootForm .btn-success{width: 100%;font-size: 1.4em}
+	#smallBootForm select,.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){width: 100%;font-size: 1.1em; -webkit-appearance: none;-moz-appearance: none;appearance: none;}
+	#layerSuccessSent{display: none;}
+
+.pricing-section{font-size: 0.7em;}
+
+
+#detail {float: left;padding-top: 5em;background: #fff}
+#detail h3 {margin: 0 10% -.6em;font-size: 1.7em;font-weight: 300;color: #999;text-align: center;}
+#detail h3 span {background: #fff;padding: 0 1em}
+#detail ul {float: left;clear: both;padding: 2em 2em 1.5em;border: 1px solid #999;margin: 0 10%;list-style: none;-moz-border-radius: 5px;-webkit-border-radius: 5px;-khtml-border-radius: 5px;border-radius: 5px;}
+#detail li {float: left;width: 50%;height: 3.5em;padding: 1em;font-size: 1.4em}
+#detail li .fa {padding-right: .8em;color:#26aae2;}
+#detail #legal {float: left;padding: 2em 10% 4em;color: #999}
+#detail #legal a {color: #777;border-bottom: 1px dotted}
+
+/* media queries */
+@media only screen and (max-width:1230px) { #Logo img { width:16em; }}
+@media only screen and (max-width:1000px) { #Logo img { width: 15em;}}
+@media only screen and (max-width: 800px) { #Logo img { width:12em; }}
+@media only screen and (max-width: 600px) { #Logo img { width:11em; }}
+@media only screen and (max-width: 450px) { #Logo img { width:10em; }}
+@media only screen and (max-width: 400px) { #Logo img { width:9em; }}
+
+@media only screen and (max-width: 1280px){
+	#promo {padding-left: 5%;padding-right: 5%;}
+    #promo .promo-descrip { padding: 0%;}
+    #smallBootForm h2 {font-size: 1.5em}
+}
+@media only screen and (max-width: 1024px){
+	#promo {padding: 0}
+	#smallBootForm {position: absolute;top: 0;right: 0;bottom: 0;margin: 0;padding: 4em 1.6em 0;-moz-border-radius: 0;-webkit-border-radius: 0;-khtml-border-radius: 0;border-radius: 0;}
+}
+@media (max-width: 992px) {
+	.navbar {font-size: .6em}
+	.navbar-default .navbar-nav>li.c2c>a {padding: .8em;}
+	#promo .promo-descrip>div:first-child {width: 65%;}
+	#smallBootForm {width: 35%;padding-top: 2em;}
+}
+@media only screen and (max-width: 800px){
+	.navbar .active a .ON, .navbar li img {display: none;}
+	.navbar-default .navbar-nav>li>a{padding-left: 15px }
+	#promo {padding: 0;background: 0 0!important;}
+
+}
+@media (max-width: 768px){
+	.navbar-default .navbar-nav>li.c2c>a {padding: .4em;}
+	.modal-body img{display:none;}
+	.modal-body .form {width: 100%;padding: 1.2em}
+	#promo .container {width: 100%;padding: 0}
+	#promo .promo-descrip>div:first-child {width: 100%;}
+	#promo .promo-descrip img {margin:0;}
+	#smallBootForm {position: relative;width: 100%;padding: 2em}
+	#detail{padding-top: 2em;}
+	#detail h3{margin: 1em 0;}
+	#detail ul {border: none;padding: 0}
+	#detail li {width: 100%;padding: 1em 0;font-size: 1em}
+}
+@media only screen and (max-width: 600px){
+	#mHeader h4 {float: right;}
+	#mHeader h4 span {width: auto;}
+}
+
+@media only screen and (max-width: 480px){
+	.navbar li.c2c {position: fixed;right: .6em;top: .6em;z-index: 1;width: 20em;font-size: 1.2em}
+	.navbar-default .navbar-nav>li.c2c>a {padding: 1em 0;}
+}
+
+@media (max-width: 768px){
+
+}

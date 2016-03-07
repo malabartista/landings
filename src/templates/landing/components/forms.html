@@ -1,0 +1,179 @@
+{% if form_type == 'small' %}
+<form id="smallBootForm" class="form form-boot">
+    <div class="form-container">
+        <h3>{{ form_h | raw }}</h3>
+        <p>{{ form_p | raw }}</p>
+        <div class="formgroup">
+            <div class="form-group">
+                <div class="inner-addon left-addon">
+                    <i class="fa fa-phone"></i>
+                    <input type="tel" class="form-control iPhone" name="iPhone" placeholder="Tel&eacute;fono" data-minlength="9" maxlength="9" data-phone="bar" required>
+                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label><input type="checkbox" class="privacity" name="iPrivacity" data-error="Debe aceptar la política de privacidad" required> {{ form_privacity | raw }}</label>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-success">{{ form_button }}</button>
+    </div>
+    {% include "components/alerts.html" with {'alert_type': 'success'} %}
+</form>
+{% endif %}
+
+{% if form_type == 'big' %}
+<form id="bigBootForm" class="form form-boot">
+    <div class="form-container">
+        <h3>{{ form_big_h }}</h3>
+        <div class="formgroup">
+            <div class="form-group">
+                <div class="inner-addon left-addon">
+                    <i class="fa fa-user"></i>
+                    <input type="text" class="form-control" name="iName" placeholder="Nombre" required data-odd="odd">
+                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="inner-addon left-addon">
+                    <i class="fa fa-phone"></i>
+                    <input type="tel" class="form-control iPhone" name="iPhone" placeholder="Tel&eacute;fono" data-minlength="9" maxlength="9" data-phone="bar" required>
+                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="inner-addon left-addon">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" class="form-control" name="iMail" placeholder="eMail" required data-odd="odd">
+                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label><input type="checkbox" class="privacity" name="iPrivacity" data-error="Debe aceptar la política de privacidad" required> {{ form_privacity | raw }}</label>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-success">{{ form_big_button }}</button>
+    </div>
+    {% include "components/alerts.html" with {'alert_type': 'success'} %}
+</form>
+{% endif %}
+
+{% if form_type == 'modal' %}
+<form id="modalBootForm" class="form form-boot">
+    <div class="form-container">
+        <h3>{{ form_modal_h | raw }}</h3>
+        <p>{{ form_modal_p | raw }}</p>
+        <div class="formgroup">
+            <div class="form-group">
+                <div class="inner-addon left-addon">
+                    <i class="fa fa-phone"></i>
+                    <input type="tel" class="form-control iPhone" name="iPhone" placeholder="Tel&eacute;fono" data-minlength="9" maxlength="9" data-phone="bar" required>
+                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-success">{{ form_modal_button }}</button>
+        <div class="form-group">
+            <div class="checkbox">
+                <label><input type="checkbox" class="privacity" name="iPrivacity" data-error="Debe aceptar la política de privacidad" required> {{ form_privacity | raw }}</label>
+            </div>
+        </div>
+    </div>
+    {% include "components/alerts.html" with {'alert_type': 'success'} %}
+</form>
+{% endif %}
+
+{% if form_type == 'small-big' %}
+<section class="bs-sidebar hidden-print">
+    <div>
+        <div>
+            {% include "components/forms.html" with {'form_type': 'small'} %}
+        </div>
+        <div>
+            {% include "components/forms.html" with {'form_type': 'big'} %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if form_type == 'cover' %}
+<div id="layerCover" class="">
+    <div id="layerCoverCheck">
+        <h3>
+            <img src="{{ base_path }}{{ image_path }}/fibra.png" alt="Jazztel Fibra" title="Jazztel Fibra">
+            Comprueba tu cobertura
+        </h3>
+        <div class="layerCoverPForm">
+            <div class="arrow-down"></div>
+            <p>Comprueba tu cobertura de Fibra Óptica de Jazztel aquí:</p>
+            <form id="frmCover" class="form form-boot">
+                <div class="form-group">
+                    <select id="iCity" class="selectpicker">
+                        <option>-- Elige tu provincia --</option>
+                        <option>Álava</option>
+                        <option>Albacete</option>
+                        <option>Alicante/Alacant</option>
+                        <option value="1">Almería</option>
+                        <option>Asturias</option>
+                        <option>Ávila</option>
+                        <option>Badajoz</option>
+                        <option>Balears (Illes)</option>
+                        <option value="1">Barcelona</option>
+                        <option>Bizkaia</option>
+                        <option>Burgos</option>
+                        <option>Cáceres</option>
+                        <option>Cádiz</option>
+                        <option>Cantabria</option>
+                        <option>Castellón</option>
+                        <option>Ciudad Real</option>
+                        <option value="1">Córdoba</option>
+                        <option>Coruña (A)</option>
+                        <option>Cuenca</option>
+                        <option>Girona</option>
+                        <option value="1">Granada</option>
+                        <option>Guadalajara</option>
+                        <option>Gipuzkoa</option>
+                        <option value="1">Huelva</option>
+                        <option>Huesca</option>
+                        <option>Jaén</option>
+                        <option>León</option>
+                        <option value="1">Lleida</option>
+                        <option>Rioja (La)</option>
+                        <option>Lugo</option>
+                        <option value="1">Madrid</option>
+                        <option value="1">Málaga</option>
+                        <option>Murcia</option>
+                        <option>Navarra</option>
+                        <option>Ourense</option>
+                        <option>Palencia</option>
+                        <option>Palmas (Las)</option>
+                        <option>Pontevedra</option>
+                        <option>Salamanca</option>
+                        <option>Santa Cruz de Tenerife</option>
+                        <option>Segovia</option>
+                        <option value="1">Sevilla</option>
+                        <option>Soria</option>
+                        <option>Tarragona</option>
+                        <option>Teruel</option>
+                        <option>Toledo</option>
+                        <option value="1">Valencia</option>
+                        <option value="1">Valladolid</option>
+                        <option>Zamora</option>
+                        <option>Zaragoza</option>
+                        <option>Ceuta</option>
+                        <option>Melilla</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-success">COMPROBAR</button>
+            </form>
+        </div>
+    </div>
+    <div id="layerFormSmall">
+        {% include "components/forms.html" with {'form_type': 'small'} %}
+    </div>
+    {% include "components/alerts.html" with {'alert_type': 'danger'} %}
+</div>
+{% endif %}

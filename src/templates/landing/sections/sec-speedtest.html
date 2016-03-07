@@ -1,0 +1,25 @@
+{% if sec_speedtest_temp == 1 %}
+<div id="speedtest">
+	<div class="container text-center">
+		<!-- BEGIN SPEED TEST - DO NOT ALTER BELOW-->
+		<script type="text/javascript" src="../test-velocidad/speedtest/swfobject.js?v=2.2"></script>
+		<div id="mini-demo">
+		  	Speedtest.net Mini requires at least version 8 of Flash. Please <a href="http://get.adobe.com/flashplayer/">update your client</a>.
+		</div><!--/mini-demo-->
+		<script type="text/javascript">
+		  var flashvars = {
+				upload_extension: "php"
+			};
+			var params = {
+				wmode: "transparent",
+				quality: "high",
+				menu: "false",
+				allowScriptAccess: "always"
+			};
+			var attributes = {};
+			swfobject.embedSWF("../test-velocidad/speedtest.swf?v=2.1.8", "mini-demo", "700", "400", "9.0.0", "speedtest/expressInstall.swf", flashvars, params, attributes);
+		</script>
+		<!-- END SPEED TEST - DO NOT ALTER ABOVE -->
+	</div>
+</div>
+{% endif %}

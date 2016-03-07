@@ -1,0 +1,52 @@
+
+{% if navbar_type == 1 %}
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="">
+      <ul class="nav navbar-nav">
+      	{% for box in navbar %}
+		    <li class="{% if navbar_active == loop.index %}active{% endif %}{% if box.liclass != '' %} {{ box.liclass }}{% endif %}">
+				<a {% if box.link starts with 'javascript' %}onclick="{{ box.link }}"{% elseif box.link starts with 'modal-promo' %}class="btn-modal" data-src="menuc2c" data-toggle="modal" data-target="#modal-promo"{% else %}href="{{ base_path }}/{{ box.link }}"{% endif %}>
+					{% if box.iconON %}
+					<img class="OFF" src="{{ base_path }}{{ image_path }}/{{ box.iconON }}" alt="{{ box.name | escape }}" title="{{ box.name | striptags }}">
+					{% endif %}
+					{% if box.iconOFF %}
+					<img class="ON" src="{{ base_path }}{{ image_path }}/{{ box.iconOFF }}" alt="{{ box.name | escape }}" title="{{ box.name | striptags  }}">
+					{% endif %}
+					{% if box.glyphicon %}
+					<i class="glyphicon {{ box.glyphicon }}"></i>
+					{% endif %}
+					{% if box.icon_fa %}
+					<i class="fa {{ box.icon_fa }}"></i>
+					{% endif %}
+					{{ box.name | raw }}
+					{% if box.active == true %}<span class="sr-only">(current)</span>{% endif %}
+				</a>
+			</li>
+		{% endfor %}
+	  </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+{% endif %}
+
+{% if navbar_type == 2 %}
+<nav class="navbar navbar-default">
+  <div class="">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="">
+      <ul class="nav navbar-nav">
+      	{% for box in navbar %}
+		    <li class="{% if navbar_active == loop.index %}active{% endif %}{% if box.liclass != '' %} {{ box.liclass }}{% endif %}">
+				<a {% if box.link starts with 'javascript' %}href="{{ box.link }}"{% else %}href="{{ base_path }}/{{ box.link }}"{% endif %}>
+					{{ box.name | raw }}
+					{% if box.active == true %}<span class="sr-only">(current)</span>{% endif %}
+				</a>
+			</li>
+		{% endfor %}
+	  </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+{% endif %}

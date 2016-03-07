@@ -1,0 +1,121 @@
+var _Elements = {"elements": {
+    "Landings":[
+        {"url":"../web-landing/index.php","height":20000}
+    ],
+    /*
+    "Headers":[
+    	{"url":"elements/header1.html","height":80, "thumbnail":"elements/images/thumbs/header1.png"},
+    	{"url":"elements/header2.html","height":100, "thumbnail":"elements/images/thumbs/header2.png"},
+    	{"url":"elements/header3.html", "thumbnail":"elements/images/thumbs/header3.png"}
+    ],
+    "Promo Blocks":[
+    	{"url":"elements/promo1.html", "thumbnail":"elements/images/thumbs/promo1.png"},
+    	{"url":"elements/promo2.html", "thumbnail":"elements/images/thumbs/promo2.png"},
+    	{"url":"elements/promo3.html", "thumbnail":"elements/images/thumbs/promo3.png"}
+    ],
+    "Content Blocks":[
+    	{"url":"elements/content1-1.html", "thumbnail":"elements/images/thumbs/content1-1.png"},
+    	{"url":"elements/content1-2.html", "thumbnail":"elements/images/thumbs/content1-2.png"},
+    	{"url":"elements/content1-3.html", "thumbnail":"elements/images/thumbs/content1-3.png"},
+    	{"url":"elements/content1-4.html", "thumbnail":"elements/images/thumbs/content1-4.png"},
+    	{"url":"elements/content1-5v1.html", "thumbnail":"elements/images/thumbs/content1-5.png"},
+    	{"url":"elements/content1-5v2.html", "thumbnail":"elements/images/thumbs/content1-5v2.png"},
+    	{"url":"elements/content1-6.html", "thumbnail":"elements/images/thumbs/content1-6.png"},
+    	{"url":"elements/content1-7.html", "thumbnail":"elements/images/thumbs/content1-7.png"},
+    	{"url":"elements/content1-8.html", "thumbnail":"elements/images/thumbs/content1-8.png"},
+    	{"url":"elements/content1-9.html", "thumbnail":"elements/images/thumbs/content1-9.png"},
+    	{"url":"elements/content2-1.html", "thumbnail":"elements/images/thumbs/content2-1.png"},
+    	{"url":"elements/content2-2.html", "thumbnail":"elements/images/thumbs/content2-2.png"},
+    	{"url":"elements/content2-3.html", "thumbnail":"elements/images/thumbs/content2-3.png"},
+    	{"url":"elements/content2-4.html", "thumbnail":"elements/images/thumbs/content2-4.png"},
+    	{"url":"elements/content2-5v1.html", "thumbnail":"elements/images/thumbs/content2-5v1.png"},
+    	{"url":"elements/content2-5v2.html", "thumbnail":"elements/images/thumbs/content2-5v2.png"},
+    	{"url":"elements/content2-6.html", "thumbnail":"elements/images/thumbs/content2-6.png"},
+    	{"url":"elements/content2-7.html", "thumbnail":"elements/images/thumbs/content2-7.png"},
+    	{"url":"elements/content2-8.html", "thumbnail":"elements/images/thumbs/content2-8.png"},
+    	{"url":"elements/content2-9.html", "thumbnail":"elements/images/thumbs/content2-9.png"},
+    	{"url":"elements/content2-10.html", "thumbnail":"elements/images/thumbs/content2-10.png"},
+        {"url":"elements/content3-1.html", "thumbnail":"elements/images/thumbs/content3-1.png"},
+        {"url":"elements/content3-2.html", "thumbnail":"elements/images/thumbs/content3-2.png"},
+        {"url":"elements/content3-3.html", "thumbnail":"elements/images/thumbs/content3-3.png"},
+        {"url":"elements/content3-4.html", "thumbnail":"elements/images/thumbs/content3-4.png"},
+        {"url":"elements/content3-5.html", "thumbnail":"elements/images/thumbs/content3-5.png"},
+        {"url":"elements/content3-6.html", "thumbnail":"elements/images/thumbs/content3-6.png"},
+        {"url":"elements/content3-7.html", "thumbnail":"elements/images/thumbs/content3-7.png"},
+        {"url":"elements/content3-8.html", "thumbnail":"elements/images/thumbs/content3-8.png"},
+        {"url":"elements/content3-9.html", "thumbnail":"elements/images/thumbs/content3-9.png"},
+        {"url":"elements/content3-10.html", "thumbnail":"elements/images/thumbs/content3-10.png"},
+        {"url":"elements/content3-11.html", "thumbnail":"elements/images/thumbs/content3-11.png"}
+    ],
+    "Gallery":[
+    	{"url":"elements/gallery1-1.html", "thumbnail":"elements/images/thumbs/gallery1.png"},
+    	{"url":"elements/gallery1-2.html", "thumbnail":"elements/images/thumbs/gallery2.png"},
+    	{"url":"elements/gallery2.html", "thumbnail":"elements/images/thumbs/gallery3.png"}
+    ],
+    "Team":[
+    	{"url":"elements/team1-1.html", "thumbnail":"elements/images/thumbs/team1.png"},
+    	{"url":"elements/team1-2.html", "thumbnail":"elements/images/thumbs/team2.png"},
+    	{"url":"elements/team2-1.html", "thumbnail":"elements/images/thumbs/team3.png"},
+    	{"url":"elements/team2-2.html", "thumbnail":"elements/images/thumbs/team4.png"}
+    ],
+    "Pricing Tables":[
+    	{"url":"elements/pricing-tables1-1.html", "thumbnail":"elements/images/thumbs/pricing-tables-1.png"},
+    	{"url":"elements/pricing-tables1-2.html", "thumbnail":"elements/images/thumbs/pricing-tables-2.png"},
+    	{"url":"elements/pricing-tables2-1.html", "thumbnail":"elements/images/thumbs/pricing-tables-3.png"}
+    ],
+    "E-Commerce":[
+    	{"url":"elements/shop1.html", "thumbnail":"elements/images/thumbs/shop1.png"},
+    	{"url":"elements/shop2.html", "thumbnail":"elements/images/thumbs/shop2.png"},
+    	{"url":"elements/shop3.html", "thumbnail":"elements/images/thumbs/shop3.png"},
+    	{"url":"elements/shop4.html", "thumbnail":"elements/images/thumbs/shop4.png"},
+    	{"url":"elements/shop5v1.html", "thumbnail":"elements/images/thumbs/shop5v1.png"},
+    	{"url":"elements/shop5v2.html", "thumbnail":"elements/images/thumbs/shop5v2.png"},
+    	{"url":"elements/shop6v1.html", "thumbnail":"elements/images/thumbs/shop6v1.png"},
+    	{"url":"elements/shop6v2.html", "thumbnail":"elements/images/thumbs/shop6v2.png"},
+    	{"url":"elements/shop7.html", "thumbnail":"elements/images/thumbs/shop7.png"}
+    ],
+    "Contact":[
+    	{"url":"elements/contact1.html", "thumbnail":"elements/images/thumbs/contact1.png"},
+    	{"url":"elements/contact2.html", "thumbnail":"elements/images/thumbs/contact2.png"},
+    	{"url":"elements/contact3.html", "thumbnail":"elements/images/thumbs/contact3.png"}
+    ],
+    "Blog":[
+    	{"url":"elements/blog1.html", "thumbnail":"elements/images/thumbs/blog1.png"}
+    ],
+    "Footer":[
+    	{"url":"elements/footer1.html", "thumbnail":"elements/images/thumbs/footer1.png"},
+    	{"url":"elements/footer2.html", "thumbnail":"elements/images/thumbs/footer2.png"},
+    	{"url":"elements/footer3.html", "thumbnail":"elements/images/thumbs/footer3.png"},
+    	{"url":"elements/footer4.html", "thumbnail":"elements/images/thumbs/footer4.png"},
+    	{"url":"elements/footer5.html", "thumbnail":"elements/images/thumbs/footer5.png"},
+        {"url":"elements/footer6.html", "thumbnail":"elements/images/thumbs/footer6.png"}
+    ],
+    "Basic":[
+    	{"url":"elements/basic1-1.html", "thumbnail":"elements/images/thumbs/basic1-1.png"},
+    	{"url":"elements/basic1-2.html", "thumbnail":"elements/images/thumbs/basic1-2.png"},
+    	{"url":"elements/basic1-3.html", "thumbnail":"elements/images/thumbs/basic1-3.png"},
+    	{"url":"elements/basic1-4.html", "thumbnail":"elements/images/thumbs/basic1-4.png"},
+    	{"url":"elements/basic1-5.html", "thumbnail":"elements/images/thumbs/basic1-5.png"},
+        {"url":"elements/basic1-6.html", "thumbnail":"elements/images/thumbs/basic1-6.png"},
+        {"url":"elements/basic1-7.html", "thumbnail":"elements/images/thumbs/basic1-7.png"},
+        {"url":"elements/basic1-8.html", "thumbnail":"elements/images/thumbs/basic1-8.png"},
+        {"url":"elements/basic1-9.html", "thumbnail":"elements/images/thumbs/basic1-9.png"},
+        {"url":"elements/basic1-10.html", "thumbnail":"elements/images/thumbs/basic1-10.png"},
+        {"url":"elements/basic1-11.html", "thumbnail":"elements/images/thumbs/basic1-11.png"},
+        {"url":"elements/basic1-12.html", "thumbnail":"elements/images/thumbs/basic1-12.png"},
+        {"url":"elements/basic1-13.html", "thumbnail":"elements/images/thumbs/basic1-13.png"},
+        {"url":"elements/basic1-14.html", "thumbnail":"elements/images/thumbs/basic1-14.png"},
+        {"url":"elements/basic1-15.html", "thumbnail":"elements/images/thumbs/basic1-15.png"},
+        {"url":"elements/basic1-16.html", "thumbnail":"elements/images/thumbs/basic1-16.png"},
+        {"url":"elements/basic1-17.html", "thumbnail":"elements/images/thumbs/basic1-17.png"},
+        {"url":"elements/basic1-18.html", "thumbnail":"elements/images/thumbs/basic1-18.png"},
+        {"url":"elements/basic1-19.html", "thumbnail":"elements/images/thumbs/basic1-19.png"},
+        {"url":"elements/basic1-20.html", "thumbnail":"elements/images/thumbs/basic1-20.png"},
+        {"url":"elements/basic1-21.html", "thumbnail":"elements/images/thumbs/basic1-21.png"},
+        {"url":"elements/basic1-22.html", "thumbnail":"elements/images/thumbs/basic1-22.png"},
+        {"url":"elements/basic1-23.html", "thumbnail":"elements/images/thumbs/basic1-23.png"},
+        {"url":"elements/basic1-24.html", "thumbnail":"elements/images/thumbs/basic1-24.png"}
+    ]
+    */
+    }
+}

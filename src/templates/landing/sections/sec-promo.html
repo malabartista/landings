@@ -1,0 +1,93 @@
+{% if sec_promo_temp == 1 %}
+<article id="promo">
+	<div class="promo-descrip container">
+		<div class="col-xs-12 col-sm-6 col-md-4">
+          {% for box in box_promo_main %}
+          <div class="dl">
+            <!--
+            <div class="ribbons"><span><em>Sale</em><strong>20%</strong></span></div>
+            <div class="ribbon super-cool"></div>
+            -->
+            {% if box.title %}
+            <div class="brand">
+                <h1>{{ box.title }}</h1>
+            </div>
+            {% endif %}
+            {% if box.price %}
+            <div class="discount">
+                {{ box.price  | raw }}
+                <div class="type">{{ box.sentence  | raw }}</div>
+            </div>
+            {% endif %}
+            {% if box.features %}
+            <div class="descr">
+                {{ box.features | raw }}
+            </div>
+            {% endif %}
+            {% if box.img %}
+            <div class="img">
+                <img src="{{ base_path}}{{ image_path }}/{{ box.img }}" alt="{{ box.img_alt }}" title="{{ box.img_alt }}">
+            </div>
+            {% endif %}
+            {% if box.img2 %}
+            <div class="img-top">
+                <img src="{{ base_path}}{{ image_path }}/{{ box.img2 }}" alt="{{ box.img2_alt }}" title="{{ box.img2_alt }}">
+            </div>
+            {% endif %}
+            {% if box.ends %}
+            <div class="ends">
+                <small>{{ box.ends }}</small>
+            </div>
+            {% endif %}
+            {% if box.promo %}
+            <div class="promo-box">
+                <small>{{ box.promo }}</small>
+            </div>
+            {% endif %}
+            {% if box.button %}
+            <div >
+                <button class="btn btn-success btn-modal" data-src="promo" data-toggle="modal" data-target="#modal-promo">{{ box.button }}</button>
+            </div>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-4">
+        {% include "components/forms.html" %}
+        </div>
+	</div>
+</article>
+{% endif %}
+
+{% if sec_promo_temp == 11 %}
+<article id="promo">
+    <div class="promo-descrip">
+        <div>
+            {% if promo_img %}
+            <div class="img">
+                <img src="{{ base_path}}{{ image_path }}/{{ promo_img }}" alt="{{ promo_title }}" title="{{ promo_title }}">
+            </div>
+            {% endif %}
+            {% if promo_img_2 %}
+            <div class="img2">
+                <img src="{{ base_path}}{{ image_path }}/{{ promo_img_2 }}" alt="{{ promo_title }}" title="{{ promo_title }}">
+            </div>
+            {% endif %}
+        </div>
+        {% include "components/forms.html" %}
+    </div>
+</article>
+{% endif %}
+
+{% if sec_promo_temp == 2 %}
+<div id="promo">
+	<div class="row">
+		<div class="col-md-8">
+			<img class="banner btn-modal" src="{{ base_path }}{{ image_path }}/{{ promo_img }}" alt="{{ promo_title }}" title="{{ promo_title }}" data-src="promo" data-toggle="modal" data-target="#modal-promo">
+		</div>
+		<div class="col-md-4">
+			{% include "components/forms.html" with {'form_type': 'small-big'} %}
+		</div>
+	</div>
+</div>
+{% endif %}

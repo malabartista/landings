@@ -1,0 +1,13 @@
+{% if alert_type == 'success' %}
+<div class="alert alert-success">
+    <h3><i class="fa fa-check"></i>¡Solicitud enviada!</h3>
+    <p>Uno de nuestros Asesores se pondrá en contacto contigo para informarte de la cobertura de fibra óptica de tu línea.</p>
+</div>
+{% endif %}
+
+{% if alert_type == 'danger' %}
+<div class="alert alert-danger">
+    <p><i class="fa fa-close"></i> La fibra óptica de Jazztel no está todavía disponible en tu provincia.</p>
+    <button type="button" class="btn btn-success">VER PRODUCTOS DE ADSL</button>
+</div>
+{% endif %}

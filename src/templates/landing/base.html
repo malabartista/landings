@@ -1,0 +1,92 @@
+{% spaceless %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <title>{{ title }}</title>
+        <meta name="description" content="{{ meta_desc }}" />
+        <meta name="keywords" content="{{ meta_key }}" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <!--[if IE]>
+            <meta http-equiv="X-UA-Compatible content="IE=edge"">
+        <![endif]-->
+
+        <meta property="og:title" content="{{ title }}">
+        <meta property="og:image" content="{{ base_path }}{{ image_path }}/logo.jpg">
+        <meta property="og:description" content="{{ meta_desc }}">
+        <meta property="og:url" content="http://{{ base_url }}">
+
+        <meta name="robots" content="index,follow" />
+        <meta name="resource-type" content="document" />
+        <meta name="rating" content="General" />
+        <meta name="revisit-after" content="1 days" />
+        <meta name="distribution" content="Global" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <!-- favicons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="{{ base_path }}{{ image_path }}/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="{{ base_path }}{{ image_path }}/favicons/apple-touch-icon-60x60.png">
+        <link rel="icon" type="image/png" href="{{ base_path }}{{ image_path }}/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="{{ base_path }}{{ image_path }}/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="{{ base_path }}{{ image_path }}/favicons/manifest.json">
+        <link rel="shortcut icon" type="image/x-icon" href="{{ base_path }}{{ image_path }}/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#00a8ff">
+        <meta name="msapplication-config" content="{{ base_path }}{{ image_path }}/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" property='stylesheet'/>
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" property='stylesheet'/>
+
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body id="{{ bodyId }}">
+        <div id="page" class="page">
+        {% block content %}{% endblock %}
+        </div>
+        <!-- custom styles -->
+        {% block css %}{% endblock %}
+        <link rel="stylesheet" href="{{ ws_base_domain }}/common/assets/css/style.css" property='stylesheet'/>
+        <link rel="stylesheet" href="{{ ws_base_domain }}/common/assets/css/{{ css_file }}" property='stylesheet'/>
+        <!-- scripts -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        {% if modal_anim %}
+        <script src="{{ base_path }}{{ js_path }}/jquery.easing.1.3.js" type="text/javascript"></script>
+        <script src="{{ base_path }}{{ js_path }}/jquery.transform-0.8.0.min.js" type="text/javascript"></script>
+        <script src="{{ base_path }}{{ js_path }}/jquery.banner.js" type="text/javascript"></script>
+        {% endif %}
+
+        {% block jscripts %}{% endblock %}
+        <script>
+            var base_url = "{{ base_url }}";
+            var base_landing = "{{ base_landing }}";
+            var ws_base_domain = "{{ ws_base_domain }}";
+        </script>
+        <script src="{{ ws_base_domain }}/common/assets/js/main.js"></script>
+        {% if ganalytics %}
+        <!-- analytics -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', '{{ ganalytics }}', 'auto');
+          ga('send', 'pageview');
+        </script>
+        {% endif %}
+
+    </body>
+</html>
+{% endspaceless %}

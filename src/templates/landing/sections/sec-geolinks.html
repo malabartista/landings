@@ -1,0 +1,15 @@
+{% if cities_arr or cities_main_arr %}
+<div id="geolinks" class="hide">
+	<div>
+		<h2>{{ geo_section_title }}</h2>
+		<ul>
+			{% for city in cities_main_arr %}
+			<li><a href="{{ base_path }}/{{ geo_section_url }}/{{ city.link }}" title="{{ geo_section_title }} {{ city.name }}">{{ city.name }}</a></li>
+			{% endfor %}
+			{% for city in cities_arr %}
+			<li><a href="{{ base_path }}/{{ geo_section_url }}/{{ city.link }}" title="{{ geo_section_title }} {{ city.name }}">{{ city.name }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+{% endif %}

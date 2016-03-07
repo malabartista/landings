@@ -1,0 +1,16 @@
+<footer id="mFooter" class="bs-footer">
+    <div class="container">
+        <h4>
+        	{{ footer_h | raw }}<strong><a href="tel:{{ phone_number | replace({' ': ''}) }}">{{ phone_number }}</a></strong>
+    	</h4>
+    </div>
+    {% if footer_navbar %}
+    <div>
+        <ul class="bs-footer-links">
+            {% for box in footer_navbar %}
+            <li><a href="#" class="modalButton" data-toggle="modal" data-src="{{ ws_base_domain }}{{ box.link }}" data-target="#modal-frame">{{ box.name | raw }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+</footer>

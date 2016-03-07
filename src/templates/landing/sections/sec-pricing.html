@@ -1,0 +1,66 @@
+{% if sec_pricing_temp == 1 %}
+    {% if pricing_arr %}
+    <div class="pricing-section">
+      <div class="container">
+        <div class="pricing-table">
+            {% for box in pricing_arr %}
+            {% set cols = 12 / (pricing_arr | length)  %}
+            <div class="plan {% if box.is_featured  == 'S' %}featured{% endif %} col-sm-{{ cols }} col-lg-{{ cols }}">
+              <div class="plan-name">
+                <div class="editContent"><h2>{{ box.title | raw }}</h2></div>
+                <div class="editContent"><p class="plan-sentence">{{ box.sentence | raw }}</p></div>
+                <div class="editContent"><span>{{ box.price | raw }}</span></div>
+              </div>
+              {% if box.image %}
+              <div class="img">
+                  <img src="{{ base_path}}{{ image_path }}/{{ box.image }}" alt="">
+              </div>
+              {% endif %}
+              <ul class="listrap">
+                {% for line in box.features %}
+                <li class="plan-feature">
+                  {% if line.glyphicon %}
+                  <div class="listrap-toggle">
+                    <span class="glyphicon {{ line.glyphicon }}"></span>
+                  </div>
+                  {% endif %}
+                  {{ line.descrip | raw }}
+                </li>
+                {% endfor %}
+                <li class="plan-feature"><a href="#" class="btn btn-success btn-modal" data-src="pricing" data-toggle="modal" data-target="#modal-promo"><i class="glyphicon glyphicon-heart"></i>  {{ box.button | raw }}</a></li>
+              </ul>
+            </div>
+            {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endif %}
+{% endif %}
+
+{% if sec_pricing_temp == 2 %}
+    {% if pricing_arr %}
+    <div class="tbl-pricing tbl-prc-recommended">
+    	<div class="row">
+            {% set cols = 12 / (pricing_arr | length)  %}
+            {% for box in pricing_arr %}
+        	<div class="col-sm-{{ cols }} col-lg-{{ cols }}">
+                <div class="tbl-prc-col {% if box.isfeatured  == 1 %}tbl-prc-col-recommended{% endif %} ">
+                    <h2 class="tbl-prc-heading">{{ box.title | raw }}</h2>
+                    <div class="tbl-prc-price">
+                        <h4>{{ box.price | raw }}</h4>
+                    </div>
+                    <ul class="tbl-prc-list">
+                        {% for line in box.features %}
+                        <li>{{ line.descrip | raw }}</li>
+                        {% endfor %}
+                    </ul>
+                    <div class="tbl-prc-footer">
+                        <a href="#" class="btn btn-success btn-modal" data-src="pricing" data-toggle="modal" data-target="#modal-promo">{{ box.button | raw }}</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+{% endif %}

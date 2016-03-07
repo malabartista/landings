@@ -1,0 +1,38 @@
+{% if sec_detail_temp == '1' %}
+	{% if detail_arr %}
+	<article id="detail">
+		<h3><span>{{ promo_title }}</span></h3>
+		<ul>
+			{% for box in detail_arr %}
+			<li><i class="fa fa-check"></i>{{ box | raw}}</li>
+			{% endfor %}
+		</ul>
+		<p id="legal">
+			<a href="#" class="modalButton" data-toggle="modal" data-src="{{ base_path }}/common/legal/conditions.html" data-target="#modal-frame">Ver condiciones de la promoción</a>
+			<br />
+			<small><i></i></small>
+		</p>
+	</article>
+	{% endif %}
+{% endif %}
+
+{% if sec_detail_temp == '2' %}
+	{% if detail_arr %}
+	<article id="detail" class="cols cols{{ promo_detail|length }}">
+	    {% for box in detail_arr %}
+	    <div class="col col{{ loop.index }}">
+	        {{ box.title | raw }}
+	        <br>
+	        {{ box.price | raw }}
+	        <span class="ivaIncluido">IVA incluido</span>
+	        <br>
+	        <a class="btn big">INFÓRMATE</a>
+	        <br>
+	        <br>
+	        {{ box.descrip | raw }}
+	    </div>
+	    {% endfor %}
+	    <p id="legal"><a href="#" class="modalButton" data-toggle="modal" data-src="{{ base_path }}/common/legal/conditions.html" data-target="#modal-frame">Ver condiciones de la promoción</a></p>
+	</article>
+	{% endif %}
+{% endif %}

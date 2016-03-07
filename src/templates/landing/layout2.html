@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block css %}
+{% endblock %}
+
+{% block content %}
+	<div class="container">
+	{% include "components/header.html" %}
+	{% include "components/navbar.html" with {'navbar_type': '2'} %}
+	{% include "sections/sec-seo-content.html" %}
+
+	{% include "sections/sec-promo.html" with {'sec_promo_temp': '2'} %}
+	{% include "sections/sec-pricing.html" %}
+	{% include "sections/sec-geolinks.html" %}
+
+	{% include "components/footer.html" %}
+	{% include "components/modal.html" %}
+	</div>
+{% endblock %}
+
+{% block js %}
+{% endblock %}

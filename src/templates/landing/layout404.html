@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block css %}
+{% endblock %}
+
+{% block content %}
+	<div id="content">
+		<div class="container">
+		{% include "components/header.html" %}
+		</div>
+		{% include "components/navbar.html"  with {'navbar_type': '1'}  %}
+		{% include "components/footer.html" %}
+	</div>
+{% endblock %}
+
+{% block js %}
+{% endblock %}
