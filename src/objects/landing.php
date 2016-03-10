@@ -357,21 +357,31 @@ function setLandingCityFromUri($landing){
 		$landing->city = ucwords(str_replace('-', ' ', $routes[2]));
 	}else if($routes[1] == "ofertas-cobertura"){
 		$landing->city = ucwords(str_replace('-', ' ', $routes[2]));
+	}else if($routes[1] == "ofertas-jazztel"){
+		$landing->city = ucwords(str_replace('-', ' ', $routes[2]));
 	}else if($routes[1] == "ofertas-jazztel-adsl-en"){
 		$landing->city = ucwords(str_replace('-', ' ', $routes[2]));
 	}else if($routes[1] == "ofertas-de-jazztel-en"){
 		$landing->city = ucwords(str_replace('-', ' ', $routes[2]));
-	}else if($routes[1] == "tarifas-jazztel-en"){
+	}else if($routes[1] == "ofertas-jazztel-moviles"){
 		$landing->city = ucwords(str_replace('-', ' ', $routes[2]));
 	}else if($routes[1] == "jazztel-fibra-optica"){
+		$landing->city = ucwords(str_replace('-', ' ', $routes[2]));
+	}else if($routes[1] == "jazztel-internet"){
 		$landing->city = ucwords(str_replace('-', ' ', $routes[2]));
 	}else if($routes[1] == "jaztell-cobertura"){
 		$landing->city = ucwords(str_replace('-', ' ', $routes[2]));
 	}else if($routes[1] == "jazztel-cobertura-fibra"){
 		$landing->city = ucwords(str_replace('-', ' ', $routes[2]));
+	}else if($routes[1] == "jazztel-moviles"){
+		$landing->city = ucwords(str_replace('-', ' ', $routes[2]));
 	}else if($routes[1] == "cobertura"){
 		$landing->city = ucwords(str_replace('-', ' ', $routes[2]));
+	}else if($routes[1] == "cobertura-adsl-jazztel"){
+		$landing->city = ucwords(str_replace('-', ' ', $routes[2]));
 	}else if($routes[1] == "cobertura-fibra-jazztel"){
+		$landing->city = ucwords(str_replace('-', ' ', $routes[2]));
+	}else if($routes[1] == "cobertura-jazztel-en"){
 		$landing->city = ucwords(str_replace('-', ' ', $routes[2]));
 	}else if($routes[1] == "cobertura-jazztel-fibra"){
 		$landing->city = ucwords(str_replace('-', ' ', $routes[2]));
@@ -380,6 +390,12 @@ function setLandingCityFromUri($landing){
 	}else if($routes[1] == "comprobar-cobertura-fibra-jazztel"){
 		$landing->city = ucwords(str_replace('-', ' ', $routes[2]));
 	}else if($routes[1] == "comprobar-cobertura-jazztel-fibra"){
+		$landing->city = ucwords(str_replace('-', ' ', $routes[2]));
+	}else if($routes[1] == "tarifas-jazztel-en"){
+		$landing->city = ucwords(str_replace('-', ' ', $routes[2]));
+	}else if($routes[1] == "tarifas-jazztel-movil"){
+		$landing->city = ucwords(str_replace('-', ' ', $routes[2]));
+	}else if($routes[1] == "tarifas-moviles-jazztel"){
 		$landing->city = ucwords(str_replace('-', ' ', $routes[2]));
 	}
 }

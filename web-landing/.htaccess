@@ -3,7 +3,7 @@ ErrorDocument 404 /404.php
 <IfModule mod_rewrite.c>
 	Options +FollowSymLinks
 	RewriteEngine On
-	#ReWriteBase /
+	ReWriteBase /
 	RewriteCond %{HTTP_HOST} ^www.jazztelfibra.info [NC]
 	RewriteRule ^(.*)$ http://jazztelfibra.info/$1 [L,R=301]
 	RewriteCond %{HTTP_HOST} ^www.jazztelfibraoptica.info [NC]
@@ -24,6 +24,14 @@ ErrorDocument 404 /404.php
 	RewriteRule ^(.*)$ http://coberturajazztel.info/$1 [L,R=301]
 	RewriteCond %{HTTP_HOST} ^www.ofertas-jazztel.net [NC]
 	RewriteRule ^(.*)$ http://ofertas-jazztel.net/$1 [L,R=301]
+	RewriteCond %{HTTP_HOST} ^www.ofertas-jazztel.info [NC]
+	RewriteRule ^(.*)$ http://ofertas-jazztel.info/$1 [L,R=301]
+	RewriteCond %{HTTP_HOST} ^www.coberturaadsljazztel.com [NC]
+	RewriteRule ^(.*)$ http://coberturaadsljazztel.com/$1 [L,R=301]
+	RewriteCond %{HTTP_HOST} ^www.jazztel-movil.com [NC]
+	RewriteRule ^(.*)$ http://jazztel-movil.com/$1 [L,R=301]
+	RewriteCond %{HTTP_HOST} ^www.jazztelmoviles.com [NC]
+	RewriteRule ^(.*)$ http://jazztelmoviles.com/$1 [L,R=301]
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteRule ^ index.php [QSA,L]
