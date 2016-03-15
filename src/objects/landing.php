@@ -254,6 +254,9 @@ function initLandingParent($landing,$database){
 	setLandingImages($landing,$database);
 }
 function initLanding($landing,$database){
+	// init city
+	setLandingCityFromUri($landing);
+	// init parent
 	initLandingParent($landing,$database);
 	// id page
 	setIdLandingPage($landing,$database);
