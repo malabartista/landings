@@ -47,21 +47,11 @@ Temporary Items
 .apdisk
 src/render/dbvars.php
 common/ws_jazztel.php
-web-landing/common/sitemaps/coberturaadsljazztel.com.xml
-web-landing/common/sitemaps/jazztel-movil.com.xml
-web-landing/common/sitemaps/jazztelmoviles.com.xml
-web-landing/common/sitemaps/jazztelmoviles.com.xml
-web-landing/common/sitemaps/ofertas-jazztel.info.xml
-web-landing/common/sitemaps/cobertura-jazztel.com.xml
-web-landing/common/sitemaps/coberturajazztelfibra.com.xml
-*.xml
-
 web-landing/google85c638d31c745b78.html
+*.xml
+*.jpg
 
-web-landing/img/yomvi.jpg
+
+
 
 web-landing/img/yomvi.png
-
-web-landing/img/adeslas-dental-movil.jpg
-
-*.jpg
