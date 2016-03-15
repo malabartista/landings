@@ -23,13 +23,14 @@ body { font-family: Roboto, Arial, sans-serif;color: #808080;font-size: 1.5em;li
 #smallBootForm{border-bottom: 1px solid #ccc;padding-bottom: 1em}
 #bigBootForm{padding-top: 1em}
 
-#modalBootForm  h3 {font-size: 1.6em;}
-#modalBootForm .form-control {font-size: 1.4em;}
-#modalBootForm .btn-success {font-size: 1.4em}
-#modalBootForm .inner-addon .fa {font-size: 2.2em;}
-#modalBootForm .form-control-feedback {font-size: 1.4em;padding: 0.4em 1.4em 0em;}
+#modalBootForm  h2 {font-size: 1.8em;}
+#modalBootForm .form-control {font-size: 1.6em;}
+#modalBootForm .btn-success {font-size: 2em}
+#modalBootForm .inner-addon .fa {font-size: 2.4em;}
+#modalBootForm .form-control-feedback {font-size: 2em;padding: 0.5em 1.4em 0em;}
 #modalBootForm .checkbox{text-align: center}
-
+.thumbnail {text-align: center}
+.thumbnail img{height: 17%;width: 60%;padding-top: 8%;}
 @media (max-width: 1200px){
 	.bs-sidebar{font-size: 0.9em;padding: 1em 1.8em;}
 	.bs-sidebar .checkbox{margin-top: 5px;margin-bottom: 5px;}

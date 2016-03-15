@@ -188,6 +188,7 @@ function setLandingTemplates($landing,$database){
 		if (array_key_exists('sec_promo_temp', $data)) {$landing->sec_promo_temp = $data["sec_promo_temp"];}
 		if (array_key_exists('sec_detail_temp', $data)) {$landing->sec_detail_temp = $data["sec_detail_temp"];}
 		if (array_key_exists('sec_pricing_temp', $data)) {$landing->sec_pricing_temp = $data["sec_pricing_temp"];}
+		if (array_key_exists('sec_thumbnails_temp', $data)) {$landing->sec_thumbnails_temp = $data["sec_thumbnails_temp"];}
 	}
 }
 function setLandingBoxPromoMain($landing,$database){
@@ -238,8 +239,6 @@ function setLandingImages($landing,$database){
 		if (array_key_exists('modal_image_alt', $data) && !empty($data["modal_image_alt"])) {$landing->modal_image_alt = $data["modal_image_alt"];}
 	}
 }
-
-
 function initLandingParent($landing,$database){
 	// parent
 	setLandingParent($landing,$database);
@@ -264,7 +263,6 @@ function initLanding($landing,$database){
 	setLandingForms($landing,$database);
 	// images
 	setLandingImages($landing,$database);
-
 	// each page
 	// box promo main
 	setLandingBoxPromoMain($landing,$database);
