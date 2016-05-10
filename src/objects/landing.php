@@ -235,6 +235,8 @@ function setLandingImages($landing,$database){
 		if (array_key_exists('logo_alt', $data) && !empty($data["logo_alt"])) {$landing->logo_alt = $data["logo_alt"];}
 		if (array_key_exists('promo_img', $data) && !empty($data["promo_img"])) {$landing->promo_img = $data["promo_img"];}
 		if (array_key_exists('promo_img_alt', $data) && !empty($data["promo_img_alt"])) {$landing->promo_img_alt = $data["promo_img_alt"];}
+		if (array_key_exists('promotions_img', $data) && !empty($data["promotions_img"])) {$landing->promotions_img = $data["promotions_img"];}
+		if (array_key_exists('promotions_img_alt', $data) && !empty($data["promotions_img_alt"])) {$landing->promotions_img_alt = $data["promotions_img_alt"];}
 		if (array_key_exists('modal_image', $data) && !empty($data["modal_image"])) {$landing->modal_image = $data["modal_image"];}
 		if (array_key_exists('modal_image_alt', $data) && !empty($data["modal_image_alt"])) {$landing->modal_image_alt = $data["modal_image_alt"];}
 	}

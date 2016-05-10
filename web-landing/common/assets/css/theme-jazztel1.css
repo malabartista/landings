@@ -23,7 +23,7 @@ body { font-family: Roboto, Arial, sans-serif;color: #808080;font-size: 1.5em;li
 		.navbar-default .navbar-nav>li>a {padding-left: 4.3em;text-align: center;text-transform: uppercase;font-weight: 400;color:#fff;}
 		.navbar-default .navbar-nav>li>a:hover {color: #fff;}
 		.navbar-default .navbar-nav>li.c2c{background-color: #5cb85c;cursor: pointer}
-		.navbar-default .navbar-nav>li.c2c>a{padding-left: 1em;padding-top: 1em;padding-bottom: 1em;}
+		.navbar-default .navbar-nav>li.c2c>a{padding-left: 1em;padding-top: 10px;padding-bottom: 10px;}
 		.navbar-default .navbar-nav>li.c2c>a>i{font-size: 2.2em;}
 		.navbar-default .navbar-nav>li.c2c>a>span{display: inline-block;font-size: 2.2em;line-height: 1.1em;}
 		.navbar-default .navbar-nav>li.c2c>a>span>em{vertical-align: baseline;width: 7.5em;font-size: .4em;font-weight: 500;line-height: 1em;font-style: normal;display: inline-block;}
@@ -32,7 +32,20 @@ body { font-family: Roboto, Arial, sans-serif;color: #808080;font-size: 1.5em;li
 		.navbar a .ON, .active a .OFF { display:none; }
 		.navbar .active a .ON { display:block; }
 
-.bs-footer { background-color: #f5f5f5;}
+@media only screen and (max-width: 600px){
+	.navbar {
+	    position: fixed;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    z-index: 999;
+	    background: #ffa632;
+	    -moz-box-shadow: 0 0 2em rgba(0,0,0,.4), 0 0 .4em rgba(0,0,0,.3);
+	    -webkit-box-shadow: 0 0 2em rgba(0,0,0,.4), 0 0 .4em rgba(0,0,0,.3);
+	    box-shadow: 0 0 2em rgba(0,0,0,.4), 0 0 .4em rgba(0,0,0,.3);
+	}
+}
+.bs-footer {}
 .bs-footer ul{background-color: #444}
 	.bs-footer-links li a{color:#fff;}
 
@@ -58,6 +71,24 @@ body { font-family: Roboto, Arial, sans-serif;color: #808080;font-size: 1.5em;li
 #smallBootForm .alert-danger{padding-top: 3em;}
 
 .pricing-section{font-size: 0.7em;}
+.tbl-pricing.tbl-prc-recommended{padding-top: 5em}
+
+/* c2a900 */
+.c2a900 {    padding: 1.5em 2em;margin-top: 2em;background: #333;background: rgba(0,0,0,.7);vertical-align: top;color: #fff;box-shadow: 0 0 15px rgba(0,0,0,.85);}
+	.c2a900 h3 { text-transform:uppercase; color:#FFA632; font-weight:200; font-size:2em; line-height:1.1em; }
+		.c2a900 h3 img { float:left; width:auto; height:2.2em; margin-right:.5em; }
+	.c2a900 p { font-size:1.2em; margin:1em 0; }
+	.c2a900 ul { font-size:2em; text-align:center; list-style: none;     padding: 0;}
+	.c2a900 li { font-size:.65em; }
+	.c2a900 #frmCoberturaTlf { font-size:1.2em; font-weight:bold; }
+	.c2a900 .c2c { margin:.6em 0 0; background:#00a833;
+	    -moz-box-shadow:0 -3px 0 rgba(0, 0, 0, 0.3) inset; -webkit-box-shadow:0 -3px 0 rgba(0, 0, 0, 0.3) inset; box-shadow:0 -3px 0 rgba(0, 0, 0, 0.3) inset;
+	    text-transform:uppercase; text-align:left; font-size:1.3em; position: relative;
+		-moz-border-radius:.2em; -webkit-border-radius:.2em; -khtml-border-radius:.2em; border-radius:.2em; }
+		.c2a900 .c2c a span { display:inline-block; padding:.3em; color:#fff; letter-spacing:-.05em; line-height:1.1em; position:relative; z-index:1; }
+		.c2a900 .c2c a em { display:inline-block; width:7.6em; font-size:.35em; font-style:normal; line-height:1.2em; letter-spacing:0; text-align:right; font-weight:500; }
+		.c2a900 .c2c img { width:2.5em; position:absolute; bottom:0; right:0;
+    		-moz-border-radius:0 0 .2em; -webkit-border-radius:0 0 .2em; -khtml-border-radius:0 0 .2em; border-radius:0 0 .2em; }
 
 /* dl promo */
 .dl {background: #fff;padding-top: 10px;border-radius: 0px;position: relative;opacity: 0.9;box-shadow: 0 0 15px rgba(0,0,0,0.85);    font-size: 0.8em;}
@@ -96,10 +127,12 @@ body { font-family: Roboto, Arial, sans-serif;color: #808080;font-size: 1.5em;li
 .pricing-table .plan ul span{font-size: 3em;}
 .pricing-table .plan ul span.glyphicon-signal{}
 .pricing-table .plan ul span.glyphicon-earphone{padding-top: 0.3em;}
+@media (min-width: 768px){
+	.navbar-nav>li>a {padding-top: 10px;padding-bottom: 10px;}
+}
 @media (max-width: 1200px){
 	#layerCover h3 {font-size: 1.2em}
 }
-
 @media (max-width: 992px) {
 	.navbar-default .navbar-nav>li.c2c>a {padding-top: 1.75em;padding-bottom: 1.75em;font-size: 1.3em;}
 	.navbar {font-size: .6em}
@@ -116,18 +149,55 @@ body { font-family: Roboto, Arial, sans-serif;color: #808080;font-size: 1.5em;li
 	.navbar-default .navbar-nav>li.c2c>a {padding: 1em 0;}
 }
 @media only screen and (max-width: 600px){
-	.bs-header .header-info {float: right;}
+	/*.bs-header .header-info {float: right;}*/
 	.bs-header .header-info span {width: auto;}
 	.nav>li>a {font-size: 1em;}
 	.navbar li.c2c {display: none}
 }
-
+@media only screen and (max-width:600px) {
+	/*.bs-header .header-info a { display:block; padding:.05em .3em .04em; background:#37b72a; cursor:pointer;font-size: 1.5em;
+		line-height:1em; color:#fff; text-shadow:0 -1px 1px rgba(0,0,0,.2); letter-spacing:-.03em;
+   		-moz-box-shadow:0 -.1em .07em rgba(0,0,0,.15) inset, 0 .5em .5em rgba(255,255,255,.3) inset, 0 .1em .2em #ccc;
+		-webkit-box-shadow:0 -.1em .07em rgba(0,0,0,.15) inset, 0 .5em .5em rgba(255,255,255,.3) inset, 0 .1em .2em #ccc;
+        box-shadow:0 -.1em .07em rgba(0,0,0,.15) inset, 0 .5em .5em rgba(255,255,255,.3) inset, 0 .1em .2em #ccc;
+	 	-moz-border-radius:5px; -webkit-border-radius:5px; -khtml-border-radius:5px; border-radius:5px; }*/
+	 /*.navbar .c2c {display:none;}*/
+}
+/*
+@media only screen and (max-width: 600px){
+	#Logo {
+	    display: block;
+	}
+	#Logo img {
+	    display: block;
+	    margin: 0 auto;
+	}
+	.bs-header .header-info {
+	    display: block;
+	    margin: 1em auto .2em;
+	    padding: .5em;
+	    background: #00a833;
+	    -moz-border-radius: 5px;
+	    -webkit-border-radius: 5px;
+	    -khtml-border-radius: 5px;
+	    border-radius: .5em;
+	    -moz-box-shadow: 0 -.3em 0 rgba(0,0,0,.3) inset;
+	    -webkit-box-shadow: 0 -.3em 0 rgba(0,0,0,.3) inset;
+	    box-shadow: 0 -.3em 0 rgba(0,0,0,.3) inset;
+	}
+	.bs-header .header-info span{color:#fff;}
+	.bs-header .header-info a { color:#fff;font-size: 2em}
+}
+*/
 @media only screen and (max-width: 480px){
 	.navbar li.c2c {width: 17em}
 	.navbar-default .navbar-nav>li.c2c>a{font-size: 1em}
 	.navbar .container{padding: 0}
 	.modal-body .form h3 {font-size: 2em;}
 	.modal-body .form p {font-size: 1.1em;}
+	#promotions {padding-top: 0}
+	#promotions img{width: 100%}
+	.tbl-pricing.tbl-prc-recommended {padding-top: 1em;}
 }
 @media only screen and (max-width: 330px){
 	#Logo img{width: 6em;}

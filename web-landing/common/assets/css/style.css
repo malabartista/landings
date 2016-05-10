@@ -89,6 +89,9 @@ a { text-decoration:none; color:#FFA632; }
 /* Sections */
 /* promo */
 .banner {width: 100%; -moz-border-radius:5px; -webkit-border-radius:5px; -khtml-border-radius:5px; border-radius:5px; }
+/* promotions */
+#promotions{padding-top: 4em;text-align: center;}
+#promotions img{width: 70%}
 /* speedtest */
 #speedtest{background-color: #f5f5f5}
 /* pricing */
@@ -213,7 +216,7 @@ figure img {width: 100%;}
 @media only screen and (max-width: 600px) { .bs-header .header-info span { display:block; width:auto; padding:0 0 .1em; font-size:1.3em; text-align:center; letter-spacing:.03em; font-size: .8em; }.bs-header .header-info a{text-align: center;}.bs-header .header-info br{display: none;}.bs-header .header-info span.phone {font-size: 2em}}
 @media only screen and (max-width: 500px) { .bs-header { font-size:1.2em; }}
 @media only screen and (max-width: 280px) { .bs-header { font-size:1.05em; }}
-@media only screen and (min-width: 600px) and (max-height:500px) { .bs-header { padding:1em 0; }}
+@media only screen and (min-width: 600px) and (max-height:500px) { .bs-header { padding: 1.4em 0; }}
 /*@media only screen and (max-width: 600px) and (max-height:380px) { .bs-header { position:absolute; }}*/
 
 @media only screen and (max-width: 768px) {.dl .img-top img {display: none} }

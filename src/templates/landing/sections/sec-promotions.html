@@ -1,3 +1,5 @@
-<article id="promotions">
-	<img id="banner" src="{{ base_path }}{{ image_path }}/{{ promotions_img }}" alt="">
-</article>
+{% if promotions_img %}
+<section id="promotions" class="container">
+	<img id="banner" src="{{ base_path }}{{ image_path }}/{{ promotions_img }}" alt="{{ promotions_img_alt }}" title="{{ promotions_img_alt }}">
+</section>
+{% endif %}

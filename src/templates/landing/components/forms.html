@@ -176,4 +176,19 @@
     </div>
     {% include "components/alerts.html" with {'alert_type': 'danger'} %}
 </div>
+<div id="frm900" class="c2a900">
+    <div id="divCompruebaCobertura1"><h3><i class="fa fa-phone"></i>&nbsp;Comprueba tu cobertura</h3>
+    <p>Llama a nuestro teléfono <b style="color: #FFA632;">GRATUITO</b><br> y te informaremos de tu cobertura<br><b style="color: #FFA632;">SIN COMPROMISO</b>.</p>
+    <ul>
+        <li id="frmCoberturaTlf"><a href="tel:{{ phone_number }}">{{ phone_number }}</a></li><li><br>o si lo prefieres...</li>
+        <li class="c2c">
+            <a data-src="promo" data-toggle="modal" data-target="#modal-promo"><span><em>Pulsa aquí y te llamamos</em> gratis</span></a>
+        </li>
+    </ul>
+    </div>
+</div>
+{% endif %}
+
+{% if form_type == '900' %}
+
 {% endif %}

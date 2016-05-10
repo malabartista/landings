@@ -5,7 +5,7 @@
 	{% set cols = 12 / (pricing_arr | length)  %}
 	<div class="col-sm-6 col-md-4">
 	    <div class="thumbnail">
-	      <img src="{{ base_path }}{{ image_path }}/{{ box.image }}" alt="...">
+	      <img src="{{ base_path }}{{ image_path }}/{{ box.image }}" alt="{{ box.image_alt }}" title="{{ box.image_alt }}">
 	      <div class="caption">
 	        <h3>{{ box.title }}</h3>
 	        <p>{{ box.sentence }}</p>
